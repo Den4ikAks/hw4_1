@@ -1,0 +1,23 @@
+{
+  "name": "hw4_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "npx live-server src"
+},
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Den4ikAks/hw4_1.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Den4ikAks/hw4_1/issues"
+  },
+  "homepage": "https://github.com/Den4ikAks/hw4_1#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

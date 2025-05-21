@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .js-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .gallery__image {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .js-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .js-lightbox.is-open {
+    display: flex;
+  }
+  
+  .lightbox__image {
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    z-index: 1001;
+  }
+  
+  .lightbox__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  button[data-action="close-lightbox"] {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+  }
+  
